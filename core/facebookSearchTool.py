@@ -11,7 +11,7 @@ class facebookSearchTool:
 		try:
 			page = requests.get(url % (name)).content.decode('utf-8')
 		except:
-			print(warning+" Aucun résultat.")
+			print(warning+" No result.")
 
 		data = page
 
